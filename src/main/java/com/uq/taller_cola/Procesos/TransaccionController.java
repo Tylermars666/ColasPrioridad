@@ -34,22 +34,17 @@ public class TransaccionController implements Initializable {
 
     private ObservableList<TipoTransaccion> observableTransaccion;
 
-    @FXML
-    void Cliente(ActionEvent event) {
-
-    }
-
-    @FXML
-    void Detalle(ActionEvent event) {
-
-    }
 
     @FXML
     void tipoTransaccion(ActionEvent event) {
+        
+    }
 
-
+    @FXML
+    void comfirmarDatos(ActionEvent event) {
 
     }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
