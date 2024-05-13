@@ -69,6 +69,7 @@ public class ClienteController implements Initializable {
 
     @FXML
     void salir(ActionEvent event){
+        System.exit(0);
 
     }
 
