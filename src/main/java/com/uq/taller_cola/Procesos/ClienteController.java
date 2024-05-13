@@ -21,6 +21,9 @@ public class ClienteController implements Initializable {
     private TextField txtNombre;
 
     @FXML
+    private TextField txtTurno;
+
+    @FXML
     private TextField txtid;
 
     @FXML
@@ -41,6 +44,11 @@ public class ClienteController implements Initializable {
     void prioridadCliente (ActionEvent event) {
 
      //prioridadCliente = cmbPrioridad.getSelectionModel().getSelectedItem();
+
+    }
+
+    @FXML
+    void salir(ActionEvent event){
 
     }
 
