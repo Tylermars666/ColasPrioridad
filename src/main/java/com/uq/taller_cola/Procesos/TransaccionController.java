@@ -34,9 +34,13 @@ public class TransaccionController implements Initializable {
 
     private ObservableList<TipoTransaccion> observableTransaccion;
 
+    TipoTransaccion tipo;
+
 
     @FXML
     void tipoTransaccion(ActionEvent event) {
+
+        tipo = cmbTipo.getSelectionModel().getSelectedItem();
         
     }
 
