@@ -77,8 +77,6 @@ public class ClienteController implements Initializable {
     void salir(ActionEvent event){
         System.exit(0);
 
-        System.exit(0);
-
     }
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
