@@ -26,6 +26,12 @@ public class ClienteController implements Initializable {
     @FXML
     private TextField txtid;
 
+    void listener(String nombre, String id){
+
+        this.txtid.setText(id);
+        this.txtNombre.setText(nombre);
+    }
+
     @FXML
     void id(ActionEvent event) {
 
@@ -69,6 +75,8 @@ public class ClienteController implements Initializable {
 
     @FXML
     void salir(ActionEvent event){
+
+        System.exit(0);
 
     }
 

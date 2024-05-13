@@ -53,6 +53,7 @@ public class TransaccionController implements Initializable {
 
         ClienteController controller = loader.getController();
         stage.show();
+        controller.listener(txtNameCliente.getText(), txtID.getText());
 
     }
 
