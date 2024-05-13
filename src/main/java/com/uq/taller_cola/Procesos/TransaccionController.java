@@ -2,6 +2,7 @@ package com.uq.taller_cola.Procesos;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -17,13 +18,13 @@ public class TransaccionController {
     private Label LblTipo;
 
     @FXML
+    private ComboBox<?> cmbTipo;
+
+    @FXML
     private TextField txtCliente;
 
     @FXML
     private TextField txtDetalle;
-
-    @FXML
-    private TextField txtTipo;
 
     @FXML
     void Cliente(ActionEvent event) {
@@ -36,7 +37,7 @@ public class TransaccionController {
     }
 
     @FXML
-    void Tipo(ActionEvent event) {
+    void tipoTransaccion(ActionEvent event) {
 
     }
 
