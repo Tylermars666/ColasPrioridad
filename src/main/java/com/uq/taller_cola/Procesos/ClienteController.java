@@ -7,7 +7,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
@@ -16,16 +15,7 @@ import java.util.ResourceBundle;
 public class ClienteController implements Initializable {
 
     @FXML
-    private Label idLabel;
-
-    @FXML
      private ComboBox<Prioridad> cmbPrioridad;
-
-    @FXML
-    private Label nombreLabel;
-
-    @FXML
-    private Label prioridadLabel;
 
     @FXML
     private TextField txtNombre;
@@ -48,9 +38,9 @@ public class ClienteController implements Initializable {
     Prioridad prioridadCliente;
 
     @FXML
-    void prioridad (ActionEvent event) {
+    void prioridadCliente (ActionEvent event) {
 
-     prioridadCliente = cmbPrioridad.getSelectionModel().getSelectedItem();
+     //prioridadCliente = cmbPrioridad.getSelectionModel().getSelectedItem();
 
     }
 

@@ -4,24 +4,18 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class TransaccionController implements Initializable {
-
-    @FXML
-    private Label LblCliente;
-
-    @FXML
-    private Label LblID;
-
-    @FXML
-    private Label LblTipo;
 
     @FXML
     private ComboBox<TipoTransaccion> cmbTipo;
@@ -48,7 +42,17 @@ public class TransaccionController implements Initializable {
     }
 
     @FXML
-    void comfirmarDatos(ActionEvent event) {
+    void comfirmarDatos(ActionEvent event) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/uq/taller_cola/Cliente.fxml"));
+
+        Scene scene = new Scene(loader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Cliente");
+        stage.setScene(scene);
+
+        ClienteController controller = loader.getController();
+        stage.show();
 
     }
 
