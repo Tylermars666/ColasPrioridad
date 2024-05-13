@@ -18,7 +18,7 @@ public class TransaccionController implements Initializable {
     private Label LblCliente;
 
     @FXML
-    private Label LblDetalle;
+    private Label LblID;
 
     @FXML
     private Label LblTipo;
@@ -30,7 +30,10 @@ public class TransaccionController implements Initializable {
     private TextField txtCliente;
 
     @FXML
-    private TextField txtDetalle;
+    private TextField txtNameCliente;
+
+    @FXML
+    private TextField txtID;
 
     private ObservableList<TipoTransaccion> observableTransaccion;
 

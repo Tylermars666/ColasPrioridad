@@ -10,10 +10,10 @@
     <children>
         <Label fx:id="LblTipo" text="Tipo: " />
       <ComboBox fx:id="cmbTipo" onAction="#tipoTransaccion" prefWidth="150.0" />
-        <Label fx:id="LblDetalle" text="Detalle: " />
-      <TextField fx:id="txtDetalle" />
-        <Label fx:id="LblCliente" text="Cliente: " />
-      <TextField fx:id="txtCliente" />
+        <Label fx:id="LblID" text="Identificación" />
+      <TextField fx:id="txtID" />
+        <Label fx:id="LblCliente" text="Nombre Cliente: " />
+      <TextField fx:id="txtNameCliente" />
       <Button fx:id="btnComfirmarDatos" mnemonicParsing="false" onAction="#comfirmarDatos" text="Comfirnar" />
     </children>
 </VBox>
