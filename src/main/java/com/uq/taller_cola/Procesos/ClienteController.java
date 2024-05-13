@@ -43,7 +43,27 @@ public class ClienteController implements Initializable {
     @FXML
     void prioridadCliente (ActionEvent event) {
 
-     //prioridadCliente = cmbPrioridad.getSelectionModel().getSelectedItem();
+     prioridadCliente = cmbPrioridad.getSelectionModel().getSelectedItem();
+
+     switch (prioridadCliente){
+
+         case EMBARAZADA : this.txtTurno.setText("1");
+         break;
+
+         case VIP : this.txtTurno.setText("2");
+         break;
+
+         case DISCAPACITADO : this.txtTurno.setText("3");
+         break;
+
+         case TERCERAEDAD : this.txtTurno.setText("4");
+         break;
+
+         case SIN_INCONVENIENTES : this.txtTurno.setText("5");
+         break;
+
+     }
+
 
     }
 
