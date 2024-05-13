@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
@@ -7,7 +8,7 @@
 <VBox prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uq.taller_cola.Procesos.TransaccionController">
     <children>
         <Label fx:id="LblTipo" text="Tipo: " />
-      <TextField fx:id="txtTipo" onAction="#Tipo" />
+      <ComboBox fx:id="cmbTipo" onAction="#tipoTransaccion" prefWidth="150.0" />
         <Label fx:id="LblDetalle" text="Detalle: " />
       <TextField fx:id="txtDetalle" onAction="#Detalle" />
         <Label fx:id="LblCliente" text="Cliente: " />
